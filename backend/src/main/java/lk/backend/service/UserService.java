@@ -1,5 +1,6 @@
 package lk.backend.service;
 
+import lk.backend.entity.CartDetail;
 import lk.backend.entity.Item;
 import lk.backend.entity.User;
 
@@ -12,4 +13,6 @@ public interface UserService {
     User signUp(User user);
 
     List<Item> getItems(String txt);
+
+    Object addToCart(CartDetail cart);
 }

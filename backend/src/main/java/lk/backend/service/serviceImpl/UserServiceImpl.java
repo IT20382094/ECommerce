@@ -1,5 +1,6 @@
 package lk.backend.service.serviceImpl;
 
+import lk.backend.entity.CartDetail;
 import lk.backend.entity.Item;
 import lk.backend.entity.User;
 import lk.backend.repository.ItemRepository;
@@ -48,6 +49,11 @@ class UserSerivceImpl implements UserService {
             itemObj.add(new Item(item));
         }
         return itemObj;
+    }
+
+    @Override
+    public Object addToCart(CartDetail cart) {
+        return null;
     }
 
 
