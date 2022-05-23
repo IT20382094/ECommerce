@@ -24,4 +24,8 @@ public class UserController {
         return ResponseEntity.ok(userService.signUp(user));
     }
 
+    @GetMapping(value = "/getItems/{txt}")
+    public ResponseEntity getItems(@PathVariable String txt) {
+        return ResponseEntity.ok(userService.getItems(txt));
+    }
 }
