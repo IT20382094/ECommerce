@@ -13,7 +13,6 @@ import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import {RouterModule} from "@angular/router";
 
-// @ts-ignore
 @NgModule({
   declarations: [
     AppComponent,
