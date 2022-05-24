@@ -1,29 +1,26 @@
-<app-header></app-header>
-
-<div style="padding-top: 5px;padding-bottom: 10px">
+  <div style="padding-top: 20px;padding-bottom: 20px; margin-left: 70%; ">
   Search Item <br>
   <div style="display: flex">
-    <input type="text" class="form-control" style="height: 25px;margin-right: 10px" [(ngModel)]="txt">
+    <input type="text" class="form-control" style="height: 25px;margin-left:0%; margin-right: 10px" [(ngModel)]="txt">
     <button class="btn btn-success" style="padding: 2px 10px 2px 10px;font-size: 14px;margin-right: 10px"
             (click)="getItems()">Search</button>
   </div>
-</div>
+  </div>
 
-<div class="row" style="padding-left: 10px">
-    <img style="width: 300px;height: 150px;display:block;margin: auto">
+    <img style="width: 300px;height: 150px;display:block;margin:auto">
     <div style="font-weight: bold;margin-top: 10px;text-align: center">Available Quantity :</div>
     <div style="font-weight: bold;margin-top: 10px;text-align: center">Price :</div>
 
     <div style="margin-top: 10px;text-align: center">
-    <button class="btn btn-warning" style="margin-top: 10px;font-weight: bold">Add to cart</button>
+      <button class="btn btn-warning" style="margin-top: 10px;margin-bottom:10px;font-weight: bold">Add to cart</button>
     </div>
 
-    <img style="width: 300px;height: 150px;display:block;margin: auto">
+    <img style="width: 300px;height: 150px;display:block;margin:auto">
     <div style="font-weight: bold;margin-top: 10px;text-align: center">Available Quantity :</div>
     <div style="font-weight: bold;margin-top: 10px;text-align: center">Price :</div>
 
     <div style="margin-top: 10px;text-align: center">
-    <button class="btn btn-warning" style="margin-top: 10px;font-weight: bold">Add to cart</button>
+    <button class="btn btn-warning" style="margin-top: 10px;margin-bottom:10px;font-weight: bold">Add to cart</button>
     </div>
 
     <img style="width: 300px;height: 150px;display:block;margin: auto">
@@ -33,6 +30,9 @@
     <div style="margin-top: 10px;text-align: center">
       <button class="btn btn-warning" style="margin-top: 10px;font-weight: bold">Add to cart</button>
     </div>
-</div>
+
+    <div style="margin-top: 10px;text-align: center">
+      <button class="btn btn-primary" style="margin-top: 10px;font-weight: bold" routerLink="/cart-view">Go to cart</button>
+    </div>
 
 
