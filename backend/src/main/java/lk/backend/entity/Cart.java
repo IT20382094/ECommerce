@@ -1,12 +1,10 @@
 package lk.backend.entity;
 
-import javax.persistence.CascadeType;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.Set;
 
+@Entity
 public class Cart {
     @Id
     private String cartId;

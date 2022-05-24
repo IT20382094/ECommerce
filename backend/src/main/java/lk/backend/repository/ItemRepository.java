@@ -1,10 +1,11 @@
 package lk.backend.repository;
 
 import lk.backend.entity.Item;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
-public interface ItemRepository {
+public interface ItemRepository extends JpaRepository<Item,String> {
     List<Item> findAll();
 
     List<Item> findAllByCategory(String txt);

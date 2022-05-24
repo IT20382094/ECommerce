@@ -1,8 +1,10 @@
 package lk.backend.entity;
 
+import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
+@Entity
 public class Item {
     @Id
     private String itemId;
@@ -13,6 +15,10 @@ public class Item {
     private int qty;
     @ManyToOne
     private User user;
+
+    public Item() {
+
+    }
 
     public Item(Item item) {
 
