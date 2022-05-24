@@ -1,1 +1,28 @@
 <app-header></app-header>
+
+<div style="border: 3px solid #aaaaaa;margin-bottom:30px; padding-bottom:300px; border-radius: 10px;margin-right: 10px">
+  <div *ngFor="let cartDetail of cartDetails;let last = last" style="margin: 10px;display: flex"
+       [ngStyle]="{'border-bottom': !last?'1px solid #aaaaaa':'','padding-bottom': !last?'10px':''}">
+    <div class="row" style="width: 100%">
+      <div class="col-6">
+        <img style="width: 100px;height: 70px">
+        <span style="margin-left: 20px">{{description}}</span>
+      </div>
+      <div class="col-3" style="padding-top: 22px">
+        <span style="font-weight: bold">Quantity :</span>
+        <span style="margin-left: 10px">{{quantity}}</span>
+      </div>
+      <div class="col-3" style="padding-top: 22px">
+        <span style="font-weight: bold">Price :</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="text-align: right;font-weight: bold;font-size: 20px;margin-right: 100px; margin-bottom: 20px;">
+  Total :
+</div>
+
+  <button class="btn btn-success" style="font-weight: bold;font-size: 20px; margin-left: 90%">
+    Purchase
+  </button>

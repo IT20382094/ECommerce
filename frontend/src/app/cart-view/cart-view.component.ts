@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cart-view.component.css']
 })
 export class CartViewComponent implements OnInit {
+  cartDetails: any;
+  description: 'abcd' | undefined;
+  quantity: 23 | undefined;
 
   constructor() { }
 
